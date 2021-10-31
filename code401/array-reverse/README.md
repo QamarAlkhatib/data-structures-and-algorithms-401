@@ -12,4 +12,4 @@
 
 Using While loop that starts with the last element and finish with the first element.
 
-Space Complexity : O(n)
+Time Complexity : O(n)
