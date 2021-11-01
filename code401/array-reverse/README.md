@@ -6,7 +6,7 @@
 
 ## Whiteboard Process
 
-![reverse array](https://raw.githubusercontent.com/QamarAlkhatib/-data-structures-and-algorithms-401/array-reverse/code401/array-reverse/reverseArray.png)
+![reverse array](https://raw.githubusercontent.com/QamarAlkhatib/data-structures-and-algorithms-401/main/code401/array-reverse/reverseArray.png)
 
 ## Approach & Efficiency
 
