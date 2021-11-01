@@ -4,7 +4,7 @@ Write a function called insertShiftArray which takes in an array and a value to 
 
 ## Whiteboard Process
 
-![whiteboard](code401/array-insert-shift/insertShiftArray.png)
+![whiteboard](https://raw.githubusercontent.com/QamarAlkhatib/data-structures-and-algorithms-401/main/code401/array-insert-shift/insertShiftArray.png)
 
 ## Approach & Efficiency
 
