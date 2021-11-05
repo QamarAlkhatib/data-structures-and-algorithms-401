@@ -1,6 +1,6 @@
 # Singly Linked List
 
-Linked list is a type of data structure
+linked list is a sequence of data elements, which are connected together via links. Each data element contains a connection to another data element in form of a pointer
 
 ## Challenge
 
@@ -43,9 +43,9 @@ Write tests to prove the following functionality:
 
 ## Code Implementation
 
-[Linked List](code401/Singly-Linked-Lists/linked-list.py)
+[Linked List](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/Singly-Linked-Lists/single-linked-list/single_linked_list/linked_list.py)
 
-[Tests Implementation](single-linked-list/tests/test_single_linked_list.py)
+[Tests Implementation](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/Singly-Linked-Lists/single-linked-list/tests/test_single_linked_list.py)
 
 ## Approach & Efficiency
 
