@@ -58,3 +58,5 @@ So the approach was some of functions were O(n) and O(1) and the total is O(n)
 - Includes a function that checks if the value exists in the linked list or not, its returns True or False. The time complexity is O(n) since it goes through the linked list index by index to check for the value.
 
 - Printing function, thus function print the output of the linked list, also the time complexity is O(n) since it goes through the list to print its elements.
+
+## [linked list part2](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/Singly-Linked-Lists/README2.md)
