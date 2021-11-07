@@ -1,4 +1,5 @@
 from single_linked_list import __version__
+
 from single_linked_list.linked_list import LinkedList, Node
 import pytest
 
@@ -37,11 +38,32 @@ def test_is_not_includes(ll):
     actual = ll.includes(10)
     assert expected == actual
 
+def test_add_to_tail(ll):
+    ll = LinkedList()
+    ll.append(88)
+    ll.append(20)
+    expected ='{ 88 } -> { 20 } -> NULL'
+    actual = ll.__str__()
+    assert expected == actual
+
+def test_insert_before(ll):
+    ll.insert_before(5,200)
+    expected ='{ Hi } -> { 200 } -> { 5 } -> NULL'
+    actual = ll.__str__()
+    assert expected == actual
+
+def test_insert_after(ll):
+    ll.append('World')
+    ll.insert_after(5,700)
+    expected ='{ Hi } -> { 5 } -> { 700 } -> { World } -> NULL'
+    actual = ll.__str__()
+    assert expected == actual
+
+
+
 @pytest.fixture
 def ll():
     ll = LinkedList()
     ll.insert(5)
-    ll.insert('Hi')
-    # ll.includes(8)
-    # ll.includes("Hi")
+    ll.insert('Hi')   
     return ll
