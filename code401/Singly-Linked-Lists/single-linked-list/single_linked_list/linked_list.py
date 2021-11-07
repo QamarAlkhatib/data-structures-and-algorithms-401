@@ -47,27 +47,7 @@ class LinkedList():
         while(last_node.next):
             last_node = last_node.next
         last_node.next = new_node
-        
-    # def insert_before(self,value, new_value):
-    #     # if self.head is None:
-    #     #     return 'not found'
-    #     # else:
-    #     #     new_node = Node(new_value)
-    #     #     new_node.next = self.head.next
-    #     #     self.head.next = new_node
-    #     new_node = Node(new_value)
-
-    #     if self.head is None:
-    #         return 'not found'
-    #     else:
-    #         if self.head.data == value:
-    #             new_node.next = self.head
-    #             self.head = new_node
-    #         while self.head.next is not None:
-    #             if self.head.data == value:
-    #                 new_node.next = self.head.next
-    #                 self.head = new_node
-                    
+                            
     def insert_before(self, target_value, value):
         newNode = Node(value)
          
