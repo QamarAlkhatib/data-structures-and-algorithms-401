@@ -9,3 +9,5 @@
 | array-insert-shift | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/array-insert-shift/README.md) |
 | array-binary-search| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/array-binary-search/README.md) |
 | Singly Linked Lists| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/Singly-Linked-Lists/README.md)
+| Singly Linked Lists2| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/Singly-Linked-Lists/README2.md)
+
