@@ -86,12 +86,18 @@ class LinkedList():
         last = self.head
         if k < count:
             return "Exception Error"
+
+        if k > count:
+            return "Exception Error"
+
         while current:
             if count == k+1:
                 break
             count +=1
             current=current.next
+        
         return current.data
+    
 
     def __str__(self):
         output =""
@@ -105,23 +111,3 @@ class LinkedList():
             output += "NULL"
             return output
 
-    
- 
-    
- 
-
-if __name__ == "__main__":
-    ll = LinkedList()
-    
-    # ll.reverse()
-    
-    ll.insert(5)
-    ll.insert(4)
-    ll.insert(0)
-    ll.insert(7)
-    k = 1
-    print(ll.kth_from_end(k))
-  
-
-
-    print(ll.__str__())

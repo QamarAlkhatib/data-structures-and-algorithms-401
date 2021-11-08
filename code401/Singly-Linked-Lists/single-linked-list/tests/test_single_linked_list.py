@@ -59,15 +59,40 @@ def test_insert_after(ll):
     actual = ll.__str__()
     assert expected == actual
 
-def kth_from_end(ll):
+def test_length(ll):
     ll.insert(5)
     ll.insert(4)
     ll.insert(0)
     ll.insert(7)
-    ll.kth_from_end(1)
-    expected = '4'
-    actual= ll.__str__()
+    
+    actual=ll.kth_from_end(7)
+    expected = "Exception Error"
     assert expected == actual
+
+def test_not_positive_int(ll):
+    
+    ll.insert(5)
+    ll.insert(2)
+    ll.insert(6)
+    ll.insert(4)
+    actual = ll.kth_from_end(-1)
+    expected = "Exception Error"
+    assert actual == expected
+
+def test_same_length(ll):
+    ll.insert(5)
+    ll.insert(2)
+    ll.insert(6)
+    ll.insert(4)
+    actual = ll.kth_from_end(3)
+    expected = "Exception Error"
+    assert actual == expected
+
+def test_one_length(ll):
+    actual = ll.kth_from_end(0)
+    expected = 5
+    assert actual == expected
+
 
 
 @pytest.fixture
