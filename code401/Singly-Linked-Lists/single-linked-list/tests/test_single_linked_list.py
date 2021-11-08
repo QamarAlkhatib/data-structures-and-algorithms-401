@@ -59,6 +59,15 @@ def test_insert_after(ll):
     actual = ll.__str__()
     assert expected == actual
 
+def kth_from_end(ll):
+    ll.insert(5)
+    ll.insert(4)
+    ll.insert(0)
+    ll.insert(7)
+    ll.kth_from_end(1)
+    expected = '4'
+    actual= ll.__str__()
+    assert expected == actual
 
 
 @pytest.fixture
