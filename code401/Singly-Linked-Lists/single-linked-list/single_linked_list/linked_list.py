@@ -10,7 +10,7 @@ class LinkedList():
 
     def __init__(self):
         self.head = None
-        self.tail = None
+        
 
     # insert a value to the end of the linked list
     def insert(self, data):
@@ -80,6 +80,19 @@ class LinkedList():
                 break
             current = current.next
 
+    def kth_from_end(self,k):
+        count =0
+        current = self.head
+        last = self.head
+        if k < count:
+            return "Exception Error"
+        while current:
+            if count == k+1:
+                break
+            count +=1
+            current=current.next
+        return current.data
+
     def __str__(self):
         output =""
         if self.head is None:
@@ -92,18 +105,23 @@ class LinkedList():
             output += "NULL"
             return output
 
+    
+ 
+    
+ 
 
 if __name__ == "__main__":
     ll = LinkedList()
+    
+    # ll.reverse()
+    
     ll.insert(5)
-    ll.insert('Hi')
-    ll.append(88)
-    ll.insert_before(5,200)
-    ll.insert_after(200,84)
-    # ll.insertAfter(200,5012)
-    # print(ll.includes(5))
-    # print(ll.includes(7))
-    # print(ll.includes(7))
+    ll.insert(4)
+    ll.insert(0)
+    ll.insert(7)
+    k = 1
+    print(ll.kth_from_end(k))
+  
 
 
     print(ll.__str__())
