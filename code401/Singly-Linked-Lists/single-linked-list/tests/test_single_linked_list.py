@@ -93,8 +93,39 @@ def test_one_length(ll):
     expected = 5
     assert actual == expected
 
+def test_one_length(ll):
+    actual = ll.kth_from_end(0)
+    expected = 5
+    assert actual == expected
 
+def test_zip_merge():
+    ll = LinkedList()
+    ll2 = LinkedList()
 
+    ll.insert(5)
+    ll.insert(2)
+    ll.insert(6)
+    ll.insert(4)
+    
+    ll2.insert(50)
+    ll2.insert(20)
+    ll2.insert(60)
+    ll2.insert(40)
+    ll.zip_lists(ll,ll2)
+    
+    actual =ll.__str__()
+    expected ='{ 4 } -> { 40 } -> { 6 } -> { 60 } -> { 2 } -> { 20 } -> { 5 } -> { 50 } -> NULL'
+    assert actual == expected
+
+def test_zip_none():
+    ll = LinkedList()
+    ll2 = LinkedList()
+    
+    ll.zip_lists(ll,ll2)
+    actual =ll.__str__()
+    expected = None
+    assert actual == expected
+    
 @pytest.fixture
 def ll():
     ll = LinkedList()
