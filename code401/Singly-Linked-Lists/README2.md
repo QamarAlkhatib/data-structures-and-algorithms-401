@@ -21,7 +21,17 @@ Write the following methods for the Linked List class:
         Return the node’s value that is k places from the tail of the linked list.
         You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous               challenges.
 
-        
+
+
+- zip lists
+    
+        Arguments: 2 linked lists
+        Return: Linked List, zipped as noted below
+        Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+        Try and keep additional space down to O(1)
+        You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+
 
 ## Whiteboard Process
 
@@ -40,6 +50,13 @@ Write the following methods for the Linked List class:
 - kth from end
 
 ![kth from end](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/Singly-Linked-Lists/kth_from_end.png?raw=true)
+
+
+- zip lists
+    
+![zipLists](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/Singly-Linked-Lists/ll_zip.png?raw=true)
+
+
 
 ## Approach & Efficiency
 
@@ -66,6 +83,13 @@ Big O: O(n), since my condition in while loop is while self.head is true (is not
 O(n) where n is the num of nodes
 
 ````
+
+
+- zip lists
+
+```
+the approach to while loop through the 2 linked list as long as they are True and then make the next of the list2 to list1 and the updating the pointer 
+O(n)
 
 ## Solution
 

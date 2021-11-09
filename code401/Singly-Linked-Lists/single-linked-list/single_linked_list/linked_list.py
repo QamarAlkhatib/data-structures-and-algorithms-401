@@ -97,7 +97,26 @@ class LinkedList():
             current=current.next
         
         return current.data
-    
+
+    def zip_lists(self, list1, list2):
+        list1_current = list1.head
+        list2_current = list2.head
+
+        if list1_current is None and list2_current is None:
+            return None
+        
+        while list1_current != None and list2_current != None:
+ 
+            #Saving the next pointers
+            list1_next = list1_current.next
+            list2_next = list2_current.next
+            # make the list2 next as list1
+            list2_current.next = list1_next  
+            list1_current.next = list2_current 
+            # update the pointers
+            list1_current = list1_next
+            list2_current = list2_next
+            list2.head = list2_current
 
     def __str__(self):
         output =""
@@ -110,4 +129,3 @@ class LinkedList():
                 currentValue = currentValue.next
             output += "NULL"
             return output
-
