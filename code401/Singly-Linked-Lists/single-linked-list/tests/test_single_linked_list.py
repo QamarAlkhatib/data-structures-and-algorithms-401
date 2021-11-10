@@ -1,6 +1,6 @@
 from single_linked_list import __version__
 
-from single_linked_list.linked_list import LinkedList, Node
+from single_linked_list.linked_list import LinkedList, Node, zip_lists
 import pytest
 
 def test_version():
@@ -111,7 +111,7 @@ def test_zip_merge():
     ll2.insert(20)
     ll2.insert(60)
     ll2.insert(40)
-    ll.zip_lists(ll,ll2)
+    zip_lists(ll,ll2)
     
     actual =ll.__str__()
     expected ='{ 4 } -> { 40 } -> { 6 } -> { 60 } -> { 2 } -> { 20 } -> { 5 } -> { 50 } -> NULL'
@@ -121,7 +121,7 @@ def test_zip_none():
     ll = LinkedList()
     ll2 = LinkedList()
     
-    ll.zip_lists(ll,ll2)
+    zip_lists(ll,ll2)
     actual =ll.__str__()
     expected = None
     assert actual == expected
