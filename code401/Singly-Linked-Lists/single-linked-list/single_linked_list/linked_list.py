@@ -98,7 +98,20 @@ class LinkedList():
         
         return current.data
 
-    def zip_lists(self, list1, list2):
+    def __str__(self):
+        output =""
+        if self.head is None:
+            output += 'None'
+        else:
+            currentValue = self.head
+            while (currentValue):
+                output += '{ '+ f"{currentValue.data}" + ' } -> '
+                currentValue = currentValue.next
+            output += "NULL"
+            return output
+
+def zip_lists(list1:LinkedList(), list2:LinkedList()):
+    
         list1_current = list1.head
         list2_current = list2.head
 
@@ -118,14 +131,4 @@ class LinkedList():
             list2_current = list2_next
             list2.head = list2_current
 
-    def __str__(self):
-        output =""
-        if self.head is None:
-            output += 'None'
-        else:
-            currentValue = self.head
-            while (currentValue):
-                output += '{ '+ f"{currentValue.data}" + ' } -> '
-                currentValue = currentValue.next
-            output += "NULL"
-            return output
+
