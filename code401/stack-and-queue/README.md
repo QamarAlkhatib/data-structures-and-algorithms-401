@@ -77,11 +77,13 @@ The approach was to reduce time complicity as much as possible.
 ### Code implementation:
 
 Queue: 
-[queue](/code401/stack-and-queue/stack_and_queue/queue.py)
-Test queue:
-[testQueue](/code401/stack-and-queue/tests/test_queue.py)
+
+- [Queue code](/code401/stack-and-queue/stack_and_queue/queue.py)
+
+- [Test queue](/code401/stack-and-queue/tests/test_queue.py)
 
 Stack:
-[stack](/code401/stack-and-queue/stack_and_queue/stack.py)
-Test Stack:
-[testQueue](/code401/stack-and-queue/tests/test_stack.py)
+
+- [Stack code](/code401/stack-and-queue/stack_and_queue/stack.py)
+
+- [Test Stack](/code401/stack-and-queue/tests/test_stack.py)
