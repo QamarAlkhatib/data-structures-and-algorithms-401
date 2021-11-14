@@ -87,3 +87,9 @@ Stack:
 - [Stack code](/code401/stack-and-queue/stack_and_queue/stack.py)
 
 - [Test Stack](/code401/stack-and-queue/tests/test_stack.py)
+
+Pseudo Queue:
+
+- [code](/code401/stack-and-queue/stack_and_queue/pseudo_queue.py)
+
+- [Test](/code401/stack-and-queue/tests/test_pseudo_queue.py)
