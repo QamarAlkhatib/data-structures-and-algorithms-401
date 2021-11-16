@@ -11,3 +11,4 @@
 | Singly Linked Lists| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/Singly-Linked-Lists/README.md)
 | Singly Linked Lists2| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/Singly-Linked-Lists/README2.md)
 | Stack and Queue| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/stack-and-queue/README.md)
+| Stack and Queue brackets| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/stack-and-queue/readmeBrackets.md)
