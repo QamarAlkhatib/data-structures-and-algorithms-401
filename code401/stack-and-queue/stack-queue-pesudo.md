@@ -17,7 +17,7 @@
 
 ## Whiteboard Process
 
-![Whiteboard](pseudoQueue.png)
+![Whiteboard](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/stack-queue-pseudo/code401/stack-and-queue/pseudoQueue.png?raw=true)
 
 ## Approach & Efficiency
 
