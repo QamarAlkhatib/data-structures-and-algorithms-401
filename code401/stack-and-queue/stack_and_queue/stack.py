@@ -29,18 +29,24 @@ class Stack:
         """
         if self.top is None:
             return Exception
-    
-        temp = self.top
-        top = self.top.next
-        temp.next = None
-        self.stack_size -= 1
-        return temp.data
+        else:
+            temp = self.top
+            top = self.top.next
+            temp.next = None
+            self.stack_size -= 1
+            return temp.data
 
        
 
 
     def is_empty(self):
-        return self.top == None
+        '''
+        check if the stack is empty ot not returned value False or True
+        '''
+        if self.top == None: 
+            return True
+        else:
+            return False
 
 
     def peek(self):
