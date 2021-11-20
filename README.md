@@ -13,3 +13,4 @@
 | Stack and Queue| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/stack-and-queue/README.md)
 | Stack and Queue pseudo| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/stack-and-queue/stack-queue-pesudo.md)
 | Stack and Queue brackets| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/stack-and-queue/readmeBrackets.md)
+| Trees| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/tree-bts/README.md)

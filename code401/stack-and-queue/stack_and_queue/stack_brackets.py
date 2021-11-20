@@ -1,11 +1,9 @@
 from stack_and_queue.stack import Stack
-import string
+
 def validate_brackets(str):
 
-    stack = [] 
-    # letter = [string.ascii_letters]
+    stack = Stack()
     for ch in str:
-
         if ch in ["(", "{", "["] :
             stack.push(ch)
         else:
@@ -21,13 +19,13 @@ def validate_brackets(str):
             if current_char == '[':
                 if ch != "]":
                     return False
-    if stack:
-        return False
+    # if stack:
+    #     return False
     return True
 
 
 if __name__ == "__main__":
-    str = "{}"
+    str = "()"
     #print(string.ascii_letters)
     print(validate_brackets(str))
     # letter = [string.ascii_letters]
