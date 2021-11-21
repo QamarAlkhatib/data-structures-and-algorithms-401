@@ -68,3 +68,9 @@ Solution:
 [Code implementation](/code401/tree-bts/tree_bts/binary_tree.py)
 
 [Test implementation](/code401/tree-bts/tests/test_binary_tree.py)
+
+
+
+Tree max method:
+
+[Readme](/code401/tree-bts/TREEMAX.md)
