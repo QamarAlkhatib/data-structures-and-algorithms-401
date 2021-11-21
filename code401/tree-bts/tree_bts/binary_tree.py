@@ -66,6 +66,22 @@ class BinaryTree:
            return output
         return _traverse
 
+    def find_max(self):
+       if self.root is None:
+           return ValueError
+        
+       maximum = self.root.value
+       
+       if self.root.left is not None:
+           left_max = self.find_max(self.root.left)
+           maximum = max(maximum, left_max)
+
+       if self.root.right is not None:
+           right_max = self.find_max(self.root.right)
+           maximum = max(maximum, right_max)
+       
+       return maximum
+
 class BinarySearchTree(BinaryTree):
 
     def __init__(self):
