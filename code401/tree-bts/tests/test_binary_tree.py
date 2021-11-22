@@ -1,5 +1,5 @@
 import pytest
-from tree_bts.binary_tree import BinaryTree,Node,BinarySearchTree
+from tree_bts.binary_tree import BinaryTree,Node,BinarySearchTree,breadth_first
 
 def test_pre_order(tree):
     traverse = tree.pre_order(tree.root)
@@ -49,15 +49,25 @@ def test_empty_pre_order(empty_tree):
     excepted =  "root tree is empty"
     assert actual == excepted
 
-def text_max_value(tree):
-    actual = tree.find_max(tree.root)
+def test_max_value(tree):
+    actual = tree.find_max()
     expected = 100
     assert actual == expected
 
-def text_empty_max_value(empty_tree):
+def test_empty_max_value(empty_tree):
     actual = empty_tree.find_max()
     expected = ValueError
     assert actual == expected
+
+def test_breadth_first(breadth_first_tree):
+    actual = breadth_first(breadth_first_tree)
+    expected = [10, 20, 70, 40, 50, 100]
+    assert actual == expected
+
+# def test_breadth_first_empty(empty_tree):
+#     actual = breadth_first(empty_tree)
+#     expected = ValueError
+#     assert actual == expected
 
 @pytest.fixture
 def tree():
@@ -88,3 +98,15 @@ def one_root_one_right_one_left():
     tree.root.left = Node(20)
     tree.root.right = Node(70)
     return tree
+
+
+@pytest.fixture
+def breadth_first_tree():
+    root = BinaryTree()
+    root = Node(10)
+    root.left = Node(20)
+    root.right = Node(70)
+    root.left.right = Node(50)
+    root.left.left = Node(40)
+    root.right.right = Node(100)
+    return root
