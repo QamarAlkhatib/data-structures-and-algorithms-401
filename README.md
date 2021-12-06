@@ -16,3 +16,5 @@
 | Trees| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/tree-bts/README.md)
 | insertion sort| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/insertion-sort/README.md) 
 | insertion sort blog | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/insertion-sort/BLOG.md)
+| merge sort| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/tree/main/code401/merge-sort) 
+| merge sort blog | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/merge-sort/BLOG.md)
