@@ -47,6 +47,6 @@ Time Complexity:
 
 ## Solution
 
-- [Code implementation](/code401/hash-table/hash_table/hash_table.py)
+- [Code implementation](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/hash-table/hash_table/hash_tables.py)
 
 - [Test implementation](/code401/hash-table/tests/test_hash_table.py)
