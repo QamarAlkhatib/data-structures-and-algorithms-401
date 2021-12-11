@@ -25,7 +25,18 @@ Implement a Hashtable Class with the following methods:
 ## Approach & Efficiency
 
 Time Complexity:
-Space Complexity:
+
+- because I used the changing the time and space for the add method is :
+  - Time: o(1)
+  - Space: O(m+n)
+  where m is the size of the hash table and n is the number of items inserted. This is because linked nodes are allocated memory outside the hash map.
+- add: o(1), because we insert the key according to the hashed key with out going through the hash table.
+
+- hash: o(n), where n is the number of the characters in a key, space: o(1)
+
+- get: o(n): where n is the  number of the keys in the hash table
+
+- contains: o(1)
 
 ## API
 
