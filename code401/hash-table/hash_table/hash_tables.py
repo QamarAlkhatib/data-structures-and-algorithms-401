@@ -75,6 +75,7 @@ class HashTable(object):
         return True if self.map[hashed_key] else False
     
     def print_hash(hash_table):
+
         for index,key in enumerate(hash_table.map):
              if key:
                  print("index is = ",index, "  key is = ",key,end=" ")
