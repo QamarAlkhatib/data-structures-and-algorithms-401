@@ -1,0 +1,8 @@
+{
+    "python.analysis.extraPaths": [
+        "./code401/hash-table",
+        "./code401/tree-bts",
+        "./code401/tree-bts/tree_bts",
+        "./code401/tree-intersection/tree_intersection"
+    ]
+}

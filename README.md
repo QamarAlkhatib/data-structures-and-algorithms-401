@@ -22,3 +22,4 @@
 | Quick sort blog | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/quick-sort/BLOG.md)
 | Hash table | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/hash-table/README.md)
 | repeated word | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/hashmap-repeated-word/README.md)
+| tree intersection | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/tree-intersection/README.md)
