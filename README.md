@@ -2,7 +2,6 @@
 
 ## Table of contents
 
-
 | Topic         | Link                                                                                                         |
 | ------------- | ------------------------------------------------------------------------------------------------------------ |
 | array-reverse | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/array-reverse/README.md) |
@@ -24,3 +23,4 @@
 | repeated word | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/hashmap-repeated-word/README.md)
 | tree intersection | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/tree-intersection/README.md)
 | left join | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/hashmap-left-join/README.md)
+| Graph | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/graph/README.md)
