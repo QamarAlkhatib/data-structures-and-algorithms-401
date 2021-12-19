@@ -6,39 +6,68 @@ class Edge:
     def __init__(self,vertex,weight):
         self.vertex = vertex
         self.weight = weight
-
+from collections import defaultdict
 class Graph:
     def __init__(self):
-        self.__adjacency_list = {}
+        self.graph = defaultdict(list)
 
     def add_node(self,value):
         node = Vertex(value)
-        self.__adjacency_list[node] = []
-        return node
+        self.graph[node] = []
+        return node.value
         
 
     def add_edge(self, node1, node2, weight=0):
-   
-        if node1 not in self.__adjacency_list:
-            raise KeyError("Start Vertex not found in graph")
-        
-        if node2 not in self.__adjacency_list:
-            raise KeyError("End Vertex not found in graph")
-
-        edge = Edge(node2, weight)
-        self.__adjacency_list[node1].append(edge)
+        self.graph[node1].append(node2)
 
     def get_nodes(self):
-        return self.__adjacency_list.keys()
+        return self.graph.keys()
 
     def get_neighbors(self,node):
-        return self.__adjacency_list.get(node,[])
+        return self.graph.get(node,[])
 
     def get_sizes(self):
-        return len(self.__adjacency_list)
+        return len(self.graph)
 
     def print_adj(self):
-        for node in self.__adjacency_list:
-            print(node.value,":", self.__adjacency_list[node])
+        for node in self.graph:
+            print(node,":", self.graph[node])
 
+    def breadth_first(self, node):
+
+        if self.graph[node] is None:
+            return None
+
+        if type(node) == str:
+            raise Exception
+        visited =[False] * len(self.graph)
+        result = []
+
+        result.append(node)
+        visited[node] = True
+        while result:
+            node = result.pop(0)
+            print(node,end=' ')
+            for i in self.graph[node]:
+                if visited[i] == False:
+                    result.append(i)
+                    visited[i] = True
+
+
+
+g = Graph()
+g.add_edge(0, 1)
+g.add_edge(0, 2)
+g.add_edge(1, 2)
+g.add_edge(2, 0)
+g.add_edge(2, 3)
+g.add_edge(3, 3)
+g.breadth_first(0)
+# print()
+# g.print_adj()
+# g.print_adj()s
+# a = g.add_node("A")
+# b = g.add_node("B")
+# g.add_edge(a, b, 10)
+# print(g.get_neighbors(a))
 
