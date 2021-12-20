@@ -18,7 +18,8 @@ class Graph:
         
 
     def add_edge(self, node1, node2, weight=0):
-        self.graph[node1].append(node2)
+        self.graph[node1].append((node2,weight))
+        # return weight
 
     def get_nodes(self):
         return self.graph.keys()
@@ -52,22 +53,20 @@ class Graph:
                 if visited[i] == False:
                     result.append(i)
                     visited[i] = True
-
-
-
-g = Graph()
-g.add_edge(0, 1)
-g.add_edge(0, 2)
-g.add_edge(1, 2)
-g.add_edge(2, 0)
-g.add_edge(2, 3)
-g.add_edge(3, 3)
-g.breadth_first(0)
-# print()
-# g.print_adj()
-# g.print_adj()s
-# a = g.add_node("A")
-# b = g.add_node("B")
-# g.add_edge(a, b, 10)
-# print(g.get_neighbors(a))
-
+        
+def business_trip(g,cities):
+    cost = 0
+    has_val = False
+    for i in range(len(cities)-1):
+        neighbors = g.graph[cities[i]]
+        for neighbor in neighbors:
+          if cities[i+1] == neighbor[0]:
+            cost += neighbor[1]
+            has_val = True
+            break
+          else:
+            cost += 0
+            has_val = False
+    if not has_val:
+      return False,'$0'     
+    return True,'$'+ str(cost)
