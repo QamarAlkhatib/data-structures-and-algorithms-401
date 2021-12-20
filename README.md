@@ -25,3 +25,4 @@
 | left join | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/hashmap-left-join/README.md)
 | Graph | [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/graph/README.md)
 | Graph breadth first| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/graph/breadth_first.md)
+| Graph trip cost| [Click here](https://github.com/QamarAlkhatib/data-structures-and-algorithms-401/blob/main/code401/graph/business-trip.md)
