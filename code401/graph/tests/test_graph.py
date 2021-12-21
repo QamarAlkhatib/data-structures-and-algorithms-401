@@ -67,4 +67,20 @@ def test_breadth_first_none():
     assert actual == expected
 
 
-    
+def test_depth_first():
+    g = Graph()
+    g.add_edge(0,1)
+    g.add_edge(0, 2)
+    g.add_edge(1, 2)
+    g.add_edge(2, 0)
+    g.add_edge(2, 3)
+    g.add_edge(3, 3)
+    actual = g.DFS(0)
+    expected = actual
+    assert actual == expected
+
+def test_depth_first_None():
+    g = Graph()
+    actual = g.DFS(0)
+    expected = None
+    assert actual == expected

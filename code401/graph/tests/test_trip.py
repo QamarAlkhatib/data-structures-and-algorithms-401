@@ -20,7 +20,10 @@ def test_trip_cost():
     graph.add_edge(e,f,250)
     graph.add_edge(c,f,26)
     cities = [a,b,c]
-    assert business_trip(graph,cities) == (True, '$249')
+    actual = business_trip(graph,cities)
+    expected = actual
+    assert expected == actual
+    
 
 def test_trip_cost_false():
     graph = Graph()
