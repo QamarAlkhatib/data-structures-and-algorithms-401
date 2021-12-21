@@ -1,3 +1,4 @@
+from collections import defaultdict
 class Vertex:
     def __init__(self,value):
         self.value = value
@@ -6,7 +7,6 @@ class Edge:
     def __init__(self,vertex,weight):
         self.vertex = vertex
         self.weight = weight
-from collections import defaultdict
 class Graph:
     def __init__(self):
         self.graph = defaultdict(list)
@@ -18,7 +18,7 @@ class Graph:
         
 
     def add_edge(self, node1, node2, weight=0):
-        self.graph[node1].append((node2,weight))
+        self.graph[node1].append(node2)
         # return weight
 
     def get_nodes(self):
@@ -53,6 +53,23 @@ class Graph:
                 if visited[i] == False:
                     result.append(i)
                     visited[i] = True
+    
+    
+    def DFSUtil(self, v, visited):
+        if v is None:
+            return None
+        visited.add(v)
+        print(v, end=' ')
+ 
+        for neighbour in self.graph[v]:
+            if neighbour not in visited:
+                self.DFSUtil(neighbour, visited)
+ 
+    def DFS(self, v):
+        visited = set()
+        self.DFSUtil(v, visited)
+
+
         
 def business_trip(g,cities):
     cost = 0
@@ -70,3 +87,4 @@ def business_trip(g,cities):
     if not has_val:
       return False,'$0'     
     return True,'$'+ str(cost)
+
